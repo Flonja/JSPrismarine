@@ -88,7 +88,14 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_query_querymanager_.querymanager.html#git_rev" class="tsd-kind-icon">git_<wbr>rev</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_query_querymanager_.querymanager.html#server" class="tsd-kind-icon">server</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_query_querymanager_.querymanager.html#onraw" class="tsd-kind-icon">on<wbr>Raw</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,7 +113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2a216a9/src/query/QueryManager.ts#L8">src/query/QueryManager.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/46d9530/src/query/QueryManager.ts#L9">src/query/QueryManager.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -123,14 +130,53 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="server" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> server</h3>
-					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">udp.Socket</span></div>
+					<a name="git_rev" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> git_<wbr>rev</h3>
+					<div class="tsd-signature tsd-kind-icon">git_<wbr>rev<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = git.short() || &#x27;unknown&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2a216a9/src/query/QueryManager.ts#L8">src/query/QueryManager.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/46d9530/src/query/QueryManager.ts#L9">src/query/QueryManager.ts:9</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="server" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> server</h3>
+					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <a href="_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/46d9530/src/query/QueryManager.ts#L8">src/query/QueryManager.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onraw" class="tsd-anchor"></a>
+					<h3>on<wbr>Raw</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Raw<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BinaryStream</span>, inetAddr<span class="tsd-signature-symbol">: </span><a href="_network_raknet_utils_inetaddress_.inetaddress.html" class="tsd-signature-type">InetAddress</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/46d9530/src/query/QueryManager.ts#L15">src/query/QueryManager.ts:15</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>buffer: <span class="tsd-signature-type">BinaryStream</span></h5>
+								</li>
+								<li>
+									<h5>inetAddr: <a href="_network_raknet_utils_inetaddress_.inetaddress.html" class="tsd-signature-type">InetAddress</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -156,7 +202,13 @@
 								<a href="_query_querymanager_.querymanager.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_query_querymanager_.querymanager.html#git_rev" class="tsd-kind-icon">git_<wbr>rev</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_query_querymanager_.querymanager.html#server" class="tsd-kind-icon">server</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_query_querymanager_.querymanager.html#onraw" class="tsd-kind-icon">on<wbr>Raw</a>
 							</li>
 						</ul>
 					</li>
@@ -183,6 +235,7 @@
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
