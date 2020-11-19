@@ -90,6 +90,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_block_blockmanager_.blockmanager.html#blockpalette" class="tsd-kind-icon">block<wbr>Palette</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_block_blockmanager_.blockmanager.html#blocks" class="tsd-kind-icon">blocks</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_block_blockmanager_.blockmanager.html#legacytoruntimeid" class="tsd-kind-icon">legacy<wbr>ToRuntime<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_block_blockmanager_.blockmanager.html#runtimeidallocator" class="tsd-kind-icon">runtime<wbr>IdAllocator</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_block_blockmanager_.blockmanager.html#runtimeidtolegacy" class="tsd-kind-icon">runtime<wbr>IdTo<wbr>Legacy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_block_blockmanager_.blockmanager.html#runtimeids" class="tsd-kind-icon">runtime<wbr>Ids</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_block_blockmanager_.blockmanager.html#server" class="tsd-kind-icon">server</a></li>
 							</ul>
@@ -105,6 +108,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_block_blockmanager_.blockmanager.html#getblockbyruntimeid" class="tsd-kind-icon">get<wbr>Block<wbr>ByRuntime<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_block_blockmanager_.blockmanager.html#getblockpalette" class="tsd-kind-icon">get<wbr>Block<wbr>Palette</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_block_blockmanager_.blockmanager.html#getblocks" class="tsd-kind-icon">get<wbr>Blocks</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_block_blockmanager_.blockmanager.html#getruntimewithid" class="tsd-kind-icon">get<wbr>Runtime<wbr>With<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_block_blockmanager_.blockmanager.html#getruntimewithmeta" class="tsd-kind-icon">get<wbr>Runtime<wbr>With<wbr>Meta</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_block_blockmanager_.blockmanager.html#importblocks" class="tsd-kind-icon">import<wbr>Blocks</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_block_blockmanager_.blockmanager.html#ondisable" class="tsd-kind-icon">on<wbr>Disable</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_block_blockmanager_.blockmanager.html#onenable" class="tsd-kind-icon">on<wbr>Enable</a></li>
@@ -126,7 +131,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L16">src/block/BlockManager.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L22">src/block/BlockManager.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">block<wbr>Palette<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> = Buffer.alloc(0)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L16">src/block/BlockManager.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L18">src/block/BlockManager.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,7 +163,37 @@
 					<div class="tsd-signature tsd-kind-icon">blocks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L14">src/block/BlockManager.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L16">src/block/BlockManager.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="legacytoruntimeid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> legacy<wbr>ToRuntime<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">legacy<wbr>ToRuntime<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L20">src/block/BlockManager.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="runtimeidallocator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> runtime<wbr>IdAllocator</h3>
+					<div class="tsd-signature tsd-kind-icon">runtime<wbr>IdAllocator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L22">src/block/BlockManager.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="runtimeidtolegacy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> runtime<wbr>IdTo<wbr>Legacy</h3>
+					<div class="tsd-signature tsd-kind-icon">runtime<wbr>IdTo<wbr>Legacy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L21">src/block/BlockManager.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -168,7 +203,7 @@
 					<div class="tsd-signature tsd-kind-icon">runtime<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L15">src/block/BlockManager.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L17">src/block/BlockManager.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -178,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <a href="_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L13">src/block/BlockManager.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L15">src/block/BlockManager.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +230,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L84">src/block/BlockManager.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L90">src/block/BlockManager.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -212,7 +247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L156">src/block/BlockManager.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L201">src/block/BlockManager.ts:201</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -229,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L41">src/block/BlockManager.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L47">src/block/BlockManager.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,7 +292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L48">src/block/BlockManager.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L54">src/block/BlockManager.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -285,7 +320,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L61">src/block/BlockManager.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L67">src/block/BlockManager.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -316,7 +351,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L73">src/block/BlockManager.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L79">src/block/BlockManager.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,7 +382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L110">src/block/BlockManager.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L155">src/block/BlockManager.ts:155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
@@ -364,7 +399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L80">src/block/BlockManager.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L86">src/block/BlockManager.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,6 +408,55 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_block_block_.block.html" class="tsd-signature-type">Block</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getruntimewithid" class="tsd-anchor"></a>
+					<h3>get<wbr>Runtime<wbr>With<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Runtime<wbr>With<wbr>Id<span class="tsd-signature-symbol">(</span>legacyId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L151">src/block/BlockManager.ts:151</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>legacyId: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getruntimewithmeta" class="tsd-anchor"></a>
+					<h3>get<wbr>Runtime<wbr>With<wbr>Meta</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Runtime<wbr>With<wbr>Meta<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, meta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L134">src/block/BlockManager.ts:134</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>meta: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -386,7 +470,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L130">src/block/BlockManager.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L175">src/block/BlockManager.ts:175</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +492,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L34">src/block/BlockManager.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L40">src/block/BlockManager.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -430,7 +514,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L25">src/block/BlockManager.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L31">src/block/BlockManager.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -452,7 +536,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/82280ef/src/block/BlockManager.ts#L117">src/block/BlockManager.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/164e02f/src/block/BlockManager.ts#L162">src/block/BlockManager.ts:162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -500,6 +584,15 @@
 								<a href="_block_blockmanager_.blockmanager.html#blocks" class="tsd-kind-icon">blocks</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_block_blockmanager_.blockmanager.html#legacytoruntimeid" class="tsd-kind-icon">legacy<wbr>ToRuntime<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_block_blockmanager_.blockmanager.html#runtimeidallocator" class="tsd-kind-icon">runtime<wbr>IdAllocator</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_block_blockmanager_.blockmanager.html#runtimeidtolegacy" class="tsd-kind-icon">runtime<wbr>IdTo<wbr>Legacy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_block_blockmanager_.blockmanager.html#runtimeids" class="tsd-kind-icon">runtime<wbr>Ids</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -529,6 +622,12 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_block_blockmanager_.blockmanager.html#getblocks" class="tsd-kind-icon">get<wbr>Blocks</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_block_blockmanager_.blockmanager.html#getruntimewithid" class="tsd-kind-icon">get<wbr>Runtime<wbr>With<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_block_blockmanager_.blockmanager.html#getruntimewithmeta" class="tsd-kind-icon">get<wbr>Runtime<wbr>With<wbr>Meta</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_block_blockmanager_.blockmanager.html#importblocks" class="tsd-kind-icon">import<wbr>Blocks</a>
 							</li>
@@ -545,6 +644,9 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/_block_blockmanager_.html#bedrockdata" class="tsd-kind-icon">Bedrock<wbr>Data</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
