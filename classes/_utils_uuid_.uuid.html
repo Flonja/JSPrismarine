@@ -88,21 +88,16 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_utils_uuid_.uuid.html#_parts" class="tsd-kind-icon">#parts</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_utils_uuid_.uuid.html#_version" class="tsd-kind-icon">#version</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_utils_uuid_.uuid.html#parts" class="tsd-kind-icon">parts</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_utils_uuid_.uuid.html#version" class="tsd-kind-icon">version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_utils_uuid_.uuid.html#parts" class="tsd-kind-icon">parts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_utils_uuid_.uuid.html#version" class="tsd-kind-icon">version</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_utils_uuid_.uuid.html#equals" class="tsd-kind-icon">equals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_utils_uuid_.uuid.html#getparts" class="tsd-kind-icon">get<wbr>Parts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_utils_uuid_.uuid.html#getversion" class="tsd-kind-icon">get<wbr>Version</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_utils_uuid_.uuid.html#tobinary" class="tsd-kind-icon">to<wbr>Binary</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_utils_uuid_.uuid.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_utils_uuid_.uuid.html#frombinary" class="tsd-kind-icon">from<wbr>Binary</a></li>
@@ -120,13 +115,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new UUID<span class="tsd-signature-symbol">(</span>part1<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, part2<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, part3<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, part4<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_utils_uuid_.uuid.html" class="tsd-signature-type">UUID</a></li>
+						<li class="tsd-signature tsd-kind-icon">new UUID<span class="tsd-signature-symbol">(</span>part1<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, part2<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, part3<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, part4<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, version<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_utils_uuid_.uuid.html" class="tsd-signature-type">UUID</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L7">src/utils/uuid.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L5">src/utils/uuid.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -144,7 +139,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> part4: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5>version: <span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> version: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 4</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_utils_uuid_.uuid.html" class="tsd-signature-type">UUID</a></h4>
@@ -155,65 +150,24 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_parts" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #parts</h3>
-					<div class="tsd-signature tsd-kind-icon">#parts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="parts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parts</h3>
+					<div class="tsd-signature tsd-kind-icon">parts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L5">src/utils/uuid.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L4">src/utils/uuid.ts:4</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_version" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #version</h3>
-					<div class="tsd-signature tsd-kind-icon">#version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="version" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> version</h3>
+					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L7">src/utils/uuid.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L5">src/utils/uuid.ts:5</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="parts" class="tsd-anchor"></a>
-					<h3>parts</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> parts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L14">src/utils/uuid.ts:14</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="version" class="tsd-anchor"></a>
-					<h3>version</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> version<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L18">src/utils/uuid.ts:18</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -228,17 +182,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L25">src/utils/uuid.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L18">src/utils/uuid.ts:18</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>uuid: <a href="_utils_uuid_.uuid.html" class="tsd-signature-type">UUID</a></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -246,19 +196,53 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="tobinary" class="tsd-anchor"></a>
-					<h3>to<wbr>Binary</h3>
+					<a name="getparts" class="tsd-anchor"></a>
+					<h3>get<wbr>Parts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Binary<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Parts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L87">src/utils/uuid.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L104">src/utils/uuid.ts:104</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getversion" class="tsd-anchor"></a>
+					<h3>get<wbr>Version</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Version<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L100">src/utils/uuid.ts:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tobinary" class="tsd-anchor"></a>
+					<h3>to<wbr>Binary</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Binary<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L78">src/utils/uuid.ts:78</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -272,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L96">src/utils/uuid.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L87">src/utils/uuid.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -289,7 +273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L48">src/utils/uuid.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L40">src/utils/uuid.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,8 +288,6 @@
 								</li>
 								<li>
 									<h5>version: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_utils_uuid_.uuid.html" class="tsd-signature-type">UUID</a></h4>
@@ -322,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L82">src/utils/uuid.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L73">src/utils/uuid.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -338,13 +320,13 @@
 					<a name="fromstring" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>String<span class="tsd-signature-symbol">(</span>uuid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_utils_uuid_.uuid.html" class="tsd-signature-type">UUID</a></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>String<span class="tsd-signature-symbol">(</span>uuid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, version<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_utils_uuid_.uuid.html" class="tsd-signature-type">UUID</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L34">src/utils/uuid.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L28">src/utils/uuid.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,9 +340,7 @@
 									<h5>uuid: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>version: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> version: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 4</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_utils_uuid_.uuid.html" class="tsd-signature-type">UUID</a></h4>
@@ -377,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dc0f2a2/src/utils/uuid.ts#L67">src/utils/uuid.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/22b539e/src/utils/uuid.ts#L58">src/utils/uuid.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -413,19 +393,19 @@
 								<a href="_utils_uuid_.uuid.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_utils_uuid_.uuid.html#_parts" class="tsd-kind-icon">#parts</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_utils_uuid_.uuid.html#_version" class="tsd-kind-icon">#version</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_utils_uuid_.uuid.html#parts" class="tsd-kind-icon">parts</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_utils_uuid_.uuid.html#version" class="tsd-kind-icon">version</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_utils_uuid_.uuid.html#equals" class="tsd-kind-icon">equals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_utils_uuid_.uuid.html#getparts" class="tsd-kind-icon">get<wbr>Parts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_utils_uuid_.uuid.html#getversion" class="tsd-kind-icon">get<wbr>Version</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_utils_uuid_.uuid.html#tobinary" class="tsd-kind-icon">to<wbr>Binary</a>
