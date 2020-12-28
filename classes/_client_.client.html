@@ -101,7 +101,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_client_.client.html#address" class="tsd-kind-icon">address</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_client_.client.html#clientguid" class="tsd-kind-icon">clientGUID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_client_.client.html#closed" class="tsd-kind-icon">closed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_client_.client.html#connected" class="tsd-kind-icon">connected</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_client_.client.html#connecting" class="tsd-kind-icon">connecting</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_client_.client.html#connection" class="tsd-kind-icon">connection</a></li>
@@ -112,6 +111,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_client_.client.html#targetaddress" class="tsd-kind-icon">target<wbr>Address</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_client_.client.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_client_.client.html#errormonitor" class="tsd-kind-icon">error<wbr>Monitor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-private"><a href="_client_.client.html#closed" class="tsd-kind-icon">closed</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -160,7 +165,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L52">src/Client.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L55">src/Client.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_client_.client.html" class="tsd-signature-type">Client</a></h4>
@@ -172,11 +177,11 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="address" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> address</h3>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> address</h3>
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <a href="_network_raknet_utils_inetaddress_.inetaddress.html" class="tsd-signature-type">InetAddress</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L44">src/Client.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L44">src/Client.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,17 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">clientGUID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol"> = Crypto.randomBytes(8).readBigInt64BE()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L42">src/Client.ts:42</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="closed" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> closed</h3>
-					<div class="tsd-signature tsd-kind-icon">closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L48">src/Client.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L42">src/Client.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L50">src/Client.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L53">src/Client.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">connecting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L49">src/Client.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L52">src/Client.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -226,17 +221,17 @@
 					<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <a href="_network_raknet_connection_.connection.html" class="tsd-signature-type">Connection</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L46">src/Client.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L46">src/Client.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="logger" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> logger</h3>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> logger</h3>
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_utils_logger_.loggerbuilder.html" class="tsd-signature-type">LoggerBuilder</a><span class="tsd-signature-symbol"> = new LoggerBuilder()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L43">src/Client.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L43">src/Client.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -246,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">login<wbr>Handled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L52">src/Client.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L55">src/Client.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -256,17 +251,17 @@
 					<div class="tsd-signature tsd-kind-icon">offline<wbr>Handled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L51">src/Client.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L54">src/Client.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="socket" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> socket</h3>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> socket</h3>
 					<div class="tsd-signature tsd-kind-icon">socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Socket</span><span class="tsd-signature-symbol"> = Dgram.createSocket({ type: &#x27;udp4&#x27; })</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L47">src/Client.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L47">src/Client.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -276,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">target<wbr>Address<span class="tsd-signature-symbol">:</span> <a href="_network_raknet_utils_inetaddress_.inetaddress.html" class="tsd-signature-type">InetAddress</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L45">src/Client.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L45">src/Client.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -311,6 +306,26 @@
 							<code>&#39;error&#39;</code> event is emitted, therefore the process will still crash if no
 						regular <code>&#39;error&#39;</code> listener is installed.</p>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+					<a name="closed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> closed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> closed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L48">src/Client.ts:48</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -370,7 +385,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L66">src/Client.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L69">src/Client.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,7 +462,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L246">src/Client.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L244">src/Client.ts:244</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_network_raknet_utils_inetaddress_.inetaddress.html" class="tsd-signature-type">InetAddress</a></h4>
@@ -483,7 +498,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_network_raknet_raknetlistener_.raknetlistener.html">RakNetListener</a>.<a href="../interfaces/_network_raknet_raknetlistener_.raknetlistener.html#getsocket">getSocket</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L242">src/Client.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L240">src/Client.ts:240</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Socket</span></h4>
@@ -500,7 +515,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L114">src/Client.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L118">src/Client.ts:118</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -523,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L164">src/Client.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L166">src/Client.ts:166</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -546,7 +561,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L196">src/Client.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L196">src/Client.ts:196</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -569,7 +584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L139">src/Client.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L143">src/Client.ts:143</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -914,7 +929,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_network_raknet_raknetlistener_.raknetlistener.html">RakNetListener</a>.<a href="../interfaces/_network_raknet_raknetlistener_.raknetlistener.html#removeconnection">removeConnection</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L250">src/Client.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L248">src/Client.ts:248</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -985,7 +1000,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f6969ea/src/Client.ts#L232">src/Client.ts:232</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3daf7f7/src/Client.ts#L230">src/Client.ts:230</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1091,9 +1106,6 @@
 								<a href="_client_.client.html#clientguid" class="tsd-kind-icon">clientGUID</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_client_.client.html#closed" class="tsd-kind-icon">closed</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_client_.client.html#connected" class="tsd-kind-icon">connected</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -1122,6 +1134,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_client_.client.html#errormonitor" class="tsd-kind-icon">error<wbr>Monitor</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+								<a href="_client_.client.html#closed" class="tsd-kind-icon">closed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_client_.client.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
