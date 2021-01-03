@@ -23,6 +23,6 @@
             "path": "../"
         }
     ],
-    "exclude": ["**/*.test.*"],
+    "exclude": ["**/*.test.*", "*.wasm"],
     "typeRoots": ["../node_modules/@types", "src/@types"]
 }
