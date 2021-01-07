@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Plugin | @jsprismarine/prismarine</title>
+	<title>CommandArgumentEntity | @jsprismarine/prismarine</title>
 	<meta name="description" content="Documentation for @jsprismarine/prismarine">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@jsprismarine/prismarine</a>
 				</li>
 				<li>
-					<a href="../modules/plugin_pluginfile.html">plugin/PluginFile</a>
+					<a href="../modules/command_commandarguments.html">command/CommandArguments</a>
 				</li>
 				<li>
-					<a href="plugin_pluginfile.plugin.html">Plugin</a>
+					<a href="command_commandarguments.commandargumententity.html">CommandArgumentEntity</a>
 				</li>
 			</ul>
-			<h1>Class Plugin</h1>
+			<h1>Class CommandArgumentEntity</h1>
 		</div>
 	</div>
 </header>
@@ -72,8 +72,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Plugin</span>
+						<span class="target">CommandArgumentEntity</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="command_commandarguments.commandargument.html" class="tsd-signature-type" data-tsd-kind="Class">CommandArgument</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -83,14 +89,14 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_pluginfile.plugin.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="command_commandarguments.commandargumententity.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_pluginfile.plugin.html#ondisable" class="tsd-kind-icon">on<wbr>Disable</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_pluginfile.plugin.html#onenable" class="tsd-kind-icon">on<wbr>Enable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="command_commandarguments.commandargumententity.html#getreadabletype" class="tsd-kind-icon">get<wbr>Readable<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="command_commandarguments.commandargumententity.html#parse" class="tsd-kind-icon">parse</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,22 +108,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<span class="tsd-signature-symbol">(</span>api<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_pluginfile.plugin.html" class="tsd-signature-type" data-tsd-kind="Class">Plugin</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Command<wbr>Argument<wbr>Entity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="command_commandarguments.commandargumententity.html" class="tsd-signature-type" data-tsd-kind="Class">CommandArgumentEntity</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/plugin/PluginFile.ts#L5">src/plugin/PluginFile.ts:5</a></li>
-								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>api: <span class="tsd-signature-type">default</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_pluginfile.plugin.html" class="tsd-signature-type" data-tsd-kind="Class">Plugin</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="command_commandarguments.commandargumententity.html" class="tsd-signature-type" data-tsd-kind="Class">CommandArgumentEntity</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -125,36 +122,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="ondisable" class="tsd-anchor"></a>
-					<h3>on<wbr>Disable</h3>
+					<a name="getreadabletype" class="tsd-anchor"></a>
+					<h3>get<wbr>Readable<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Disable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Readable<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/plugin/PluginFile.ts#L8">src/plugin/PluginFile.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/command/CommandArguments.ts#L51">src/command/CommandArguments.ts:51</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="onenable" class="tsd-anchor"></a>
-					<h3>on<wbr>Enable</h3>
+					<a name="parse" class="tsd-anchor"></a>
+					<h3>parse</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Enable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>reader<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="player_player.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/plugin/PluginFile.ts#L7">src/plugin/PluginFile.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/command/CommandArguments.ts#L39">src/command/CommandArguments.ts:39</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>reader: <span class="tsd-signature-type">default</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="player_player.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -167,32 +170,38 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/plugin_pluginfile.html">plugin/<wbr>Plugin<wbr>File</a>
+						<a href="../modules/command_commandarguments.html">command/<wbr>Command<wbr>Arguments</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="command_commandarguments.commandargument.html" class="tsd-kind-icon">Command<wbr>Argument</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="plugin_pluginfile.plugin.html" class="tsd-kind-icon">Plugin</a>
+						<a href="command_commandarguments.commandargumententity.html" class="tsd-kind-icon">Command<wbr>Argument<wbr>Entity</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="plugin_pluginfile.plugin.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="command_commandarguments.commandargumententity.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="plugin_pluginfile.plugin.html#ondisable" class="tsd-kind-icon">on<wbr>Disable</a>
+								<a href="command_commandarguments.commandargumententity.html#getreadabletype" class="tsd-kind-icon">get<wbr>Readable<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="plugin_pluginfile.plugin.html#onenable" class="tsd-kind-icon">on<wbr>Enable</a>
+								<a href="command_commandarguments.commandargumententity.html#parse" class="tsd-kind-icon">parse</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="plugin_pluginfile.default.html" class="tsd-kind-icon">default</a>
+						<a href="command_commandarguments.commandargumentfloatposition.html" class="tsd-kind-icon">Command<wbr>Argument<wbr>Float<wbr>Position</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="command_commandarguments.commandargumentgamemode.html" class="tsd-kind-icon">Command<wbr>Argument<wbr>Gamemode</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>default | @jsprismarine/prismarine</title>
+	<title>CommandArgumentFloatPosition | @jsprismarine/prismarine</title>
 	<meta name="description" content="Documentation for @jsprismarine/prismarine">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@jsprismarine/prismarine</a>
 				</li>
 				<li>
-					<a href="../modules/world_blockposition.html">world/BlockPosition</a>
+					<a href="../modules/command_commandarguments.html">command/CommandArguments</a>
 				</li>
 				<li>
-					<a href="world_blockposition.default.html">default</a>
+					<a href="command_commandarguments.commandargumentfloatposition.html">CommandArgumentFloatPosition</a>
 				</li>
 			</ul>
-			<h1>Class default</h1>
+			<h1>Class CommandArgumentFloatPosition</h1>
 		</div>
 	</div>
 </header>
@@ -75,10 +75,16 @@
 						<a href="math_vector3.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">default</span>
+								<span class="target">CommandArgumentFloatPosition</span>
 							</li>
 						</ul>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="command_commandarguments.commandargument.html" class="tsd-signature-type" data-tsd-kind="Class">CommandArgument</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -88,18 +94,21 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="world_blockposition.default.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="command_commandarguments.commandargumentfloatposition.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="world_blockposition.default.html#getx" class="tsd-kind-icon">getX</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="world_blockposition.default.html#gety" class="tsd-kind-icon">getY</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="world_blockposition.default.html#getz" class="tsd-kind-icon">getZ</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="world_blockposition.default.html#setx" class="tsd-kind-icon">setX</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="world_blockposition.default.html#sety" class="tsd-kind-icon">setY</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="world_blockposition.default.html#setz" class="tsd-kind-icon">setZ</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="command_commandarguments.commandargumentfloatposition.html#getexamples" class="tsd-kind-icon">get<wbr>Examples</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="command_commandarguments.commandargumentfloatposition.html#getreadabletype" class="tsd-kind-icon">get<wbr>Readable<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command_commandarguments.commandargumentfloatposition.html#getx" class="tsd-kind-icon">getX</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command_commandarguments.commandargumentfloatposition.html#gety" class="tsd-kind-icon">getY</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command_commandarguments.commandargumentfloatposition.html#getz" class="tsd-kind-icon">getZ</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="command_commandarguments.commandargumentfloatposition.html#parse" class="tsd-kind-icon">parse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command_commandarguments.commandargumentfloatposition.html#setx" class="tsd-kind-icon">setX</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command_commandarguments.commandargumentfloatposition.html#sety" class="tsd-kind-icon">setY</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="command_commandarguments.commandargumentfloatposition.html#setz" class="tsd-kind-icon">setZ</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,35 +120,57 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new default<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="world_blockposition.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Command<wbr>Argument<wbr>Float<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="command_commandarguments.commandargumentfloatposition.html" class="tsd-signature-type" data-tsd-kind="Class">CommandArgumentFloatPosition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="math_vector3.default.html">default</a>.<a href="math_vector3.default.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/math/Vector3.ts#L4">src/math/Vector3.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/command/CommandArguments.ts#L58">src/command/CommandArguments.ts:58</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>x: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
-								</li>
-								<li>
-									<h5>y: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
-								</li>
-								<li>
-									<h5>z: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="world_blockposition.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="command_commandarguments.commandargumentfloatposition.html" class="tsd-signature-type" data-tsd-kind="Class">CommandArgumentFloatPosition</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getexamples" class="tsd-anchor"></a>
+					<h3>get<wbr>Examples</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Examples<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/command/CommandArguments.ts#L72">src/command/CommandArguments.ts:72</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getreadabletype" class="tsd-anchor"></a>
+					<h3>get<wbr>Readable<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Readable<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/command/CommandArguments.ts#L76">src/command/CommandArguments.ts:76</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getx" class="tsd-anchor"></a>
 					<h3>getX</h3>
@@ -191,6 +222,29 @@
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="parse" class="tsd-anchor"></a>
+					<h3>parse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>reader<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="command_commandarguments.commandargumentfloatposition.html" class="tsd-signature-type" data-tsd-kind="Class">CommandArgumentFloatPosition</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/f28fe24/src/command/CommandArguments.ts#L63">src/command/CommandArguments.ts:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>reader: <span class="tsd-signature-type">default</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="command_commandarguments.commandargumentfloatposition.html" class="tsd-signature-type" data-tsd-kind="Class">CommandArgumentFloatPosition</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -275,42 +329,60 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/world_blockposition.html">world/<wbr>Block<wbr>Position</a>
+						<a href="../modules/command_commandarguments.html">command/<wbr>Command<wbr>Arguments</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="command_commandarguments.commandargument.html" class="tsd-kind-icon">Command<wbr>Argument</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="command_commandarguments.commandargumententity.html" class="tsd-kind-icon">Command<wbr>Argument<wbr>Entity</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="world_blockposition.default.html" class="tsd-kind-icon">default</a>
+						<a href="command_commandarguments.commandargumentfloatposition.html" class="tsd-kind-icon">Command<wbr>Argument<wbr>Float<wbr>Position</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-								<a href="world_blockposition.default.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="command_commandarguments.commandargumentfloatposition.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="command_commandarguments.commandargumentfloatposition.html#getexamples" class="tsd-kind-icon">get<wbr>Examples</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="command_commandarguments.commandargumentfloatposition.html#getreadabletype" class="tsd-kind-icon">get<wbr>Readable<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="world_blockposition.default.html#getx" class="tsd-kind-icon">getX</a>
+								<a href="command_commandarguments.commandargumentfloatposition.html#getx" class="tsd-kind-icon">getX</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="world_blockposition.default.html#gety" class="tsd-kind-icon">getY</a>
+								<a href="command_commandarguments.commandargumentfloatposition.html#gety" class="tsd-kind-icon">getY</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="world_blockposition.default.html#getz" class="tsd-kind-icon">getZ</a>
+								<a href="command_commandarguments.commandargumentfloatposition.html#getz" class="tsd-kind-icon">getZ</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="command_commandarguments.commandargumentfloatposition.html#parse" class="tsd-kind-icon">parse</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="world_blockposition.default.html#setx" class="tsd-kind-icon">setX</a>
+								<a href="command_commandarguments.commandargumentfloatposition.html#setx" class="tsd-kind-icon">setX</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="world_blockposition.default.html#sety" class="tsd-kind-icon">setY</a>
+								<a href="command_commandarguments.commandargumentfloatposition.html#sety" class="tsd-kind-icon">setY</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="world_blockposition.default.html#setz" class="tsd-kind-icon">setZ</a>
+								<a href="command_commandarguments.commandargumentfloatposition.html#setz" class="tsd-kind-icon">setZ</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="command_commandarguments.commandargumentgamemode.html" class="tsd-kind-icon">Command<wbr>Argument<wbr>Gamemode</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -331,14 +403,15 @@
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 			</ul>
 		</div>
 	</div>
