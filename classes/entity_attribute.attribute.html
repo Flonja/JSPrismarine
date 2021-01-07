@@ -115,13 +115,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Attribute<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, def<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="entity_attribute.attribute.html" class="tsd-signature-type" data-tsd-kind="Class">Attribute</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Attribute<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>def<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="entity_attribute.attribute.html" class="tsd-signature-type" data-tsd-kind="Class">Attribute</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L26">src/entity/attribute.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L26">src/entity/attribute.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -132,34 +132,39 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Attribute identifier</p>
-									</div>
-								</li>
-								<li>
-									<h5>min: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Attribute minimum value</p>
-									</div>
-								</li>
-								<li>
-									<h5>max: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Attribute maximum value</p>
-									</div>
-								</li>
-								<li>
-									<h5>def: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Attribute default value</p>
-									</div>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Attribute current value</p>
-									</div>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>def<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>def<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<p>Attribute default value</p>
+											</div>
+										</li>
+										<li class="tsd-parameter">
+											<h5>max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<p>Attribute maximum value</p>
+											</div>
+										</li>
+										<li class="tsd-parameter">
+											<h5>min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<p>Attribute minimum value</p>
+											</div>
+										</li>
+										<li class="tsd-parameter">
+											<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<p>Attribute identifier</p>
+											</div>
+										</li>
+										<li class="tsd-parameter">
+											<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<p>Attribute current value</p>
+											</div>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="entity_attribute.attribute.html" class="tsd-signature-type" data-tsd-kind="Class">Attribute</a></h4>
@@ -175,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L25">src/entity/attribute.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L25">src/entity/attribute.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,7 +190,7 @@
 					<div class="tsd-signature tsd-kind-icon">max<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L24">src/entity/attribute.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L24">src/entity/attribute.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">min<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L23">src/entity/attribute.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L23">src/entity/attribute.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L22">src/entity/attribute.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L22">src/entity/attribute.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L26">src/entity/attribute.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L26">src/entity/attribute.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -232,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L63">src/entity/attribute.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L69">src/entity/attribute.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -249,7 +254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L59">src/entity/attribute.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L65">src/entity/attribute.ts:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -266,7 +271,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L55">src/entity/attribute.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L61">src/entity/attribute.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -283,7 +288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L51">src/entity/attribute.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L57">src/entity/attribute.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -300,7 +305,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/4ceabd4/src/entity/attribute.ts#L67">src/entity/attribute.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b5f2084/src/entity/attribute.ts#L73">src/entity/attribute.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
